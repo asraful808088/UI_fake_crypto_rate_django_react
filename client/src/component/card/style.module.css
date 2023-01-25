@@ -76,7 +76,9 @@
   color: green;
   transition: 1s;
   transform-origin: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item .des .loss_or_profit .lossicon {
   box-sizing: border-box;
