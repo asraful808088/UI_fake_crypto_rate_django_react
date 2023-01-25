@@ -1,0 +1,94 @@
+.root {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  min-height: 100vh;
+}
+.root header {
+  color: aliceblue;
+  text-align: center;
+  font-size: 100px;
+}
+.root .cardBox {
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+.root .cardBox .item {
+  width: 300px;
+  height: 400px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 50px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.root .cardBox .item::after {
+  content: "";
+  position: absolute;
+  height: 104%;
+  width: 105%;
+  background-color: rgba(0, 255, 64, 0.514);
+  border-radius: 10px;
+  filter: blur(10px);
+}
+.root .cardBox .item > div {
+  background: black;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.root .cardBox .item > div:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.root .cardBox .item > div:nth-child(2) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.root .cardBox .item .scale {
+  height: 60%;
+}
+.root .cardBox .item .des {
+  height: 40%;
+}
+.root .cardBox .item .des .loss_or_profit {
+  width: 100%;
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+
+.root .cardBox .item .des .loss_or_profit .icon {
+  content: "\2B9D";
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  margin-left: 30%;
+  margin-top: 5%;
+  color: green;
+}
+.root .cardBox .item .des .loss_or_profit .rate {
+  color: aliceblue;
+  font-size: 30px;
+}
+.root .cardBox .item .des .text {
+  width: 100%;
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+}
+
+.root .cardBox .item .scale {
+  position: relative;
+  display: flex;
+}
